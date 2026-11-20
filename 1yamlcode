@@ -1,1 +1,13 @@
-
+# code to create a nginx pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  tier: backend
+spec:
+  name: nginx
+  container:
+    lables:
+      - name: nginx
+        image: nginx
+    
